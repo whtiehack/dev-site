@@ -42,6 +42,20 @@
   .title {
     flex: 1;
   }
+  .search {
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #afafaf;
+    margin-right: 10px;
+    padding-bottom: 3px;
+    max-width: 80px;
+    text-align: center;
+    &::placeholder {
+      color: #afafaf;
+      text-align: center;
+    }
+  }
   .tag {
     font-size: 12px;
     line-height: 25px;
@@ -135,14 +149,12 @@
   h4 {
     padding: 0 10px 0 5px;
     margin: 0;
-    line-height: 16px;
-    height: 16px;
+    line-height: 29px;
     vertical-align: middle;
     flex: 1;
   }
   img {
     height: 23px;
-    min-width: 23px;
     min-height: 23px;
     vertical-align: middle;
     border-radius: 3px;
@@ -194,21 +206,15 @@
       }
     }
   }
-}
-
-.zhHans {
-  circle, path {
-    color: #606467;
-  }
-  path {
-    fill: #fff;
-  }
-  &:hover {
-    circle {
+  .zhhans {
+    &:hover {
       fill: #D64B24;
-    }
-    path {
-      fill: #FBDC00;
+      circle {
+        fill: #D64B24;
+      }
+      path {
+        fill: #FBDC00;
+      }
     }
   }
 }
